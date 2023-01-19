@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka&display=swap" rel="stylesheet"> 
+    <title>Happy roommate</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="billToSplit">
+            <h1>Happy roommate</h1>
+            <h3>to pay this month:</h3>
+            <span> $  <input type="text" class="rent" placeholder="rent"></span>
+            <span> $ <input type="text" class="electricity" placeholder="electricity"></span>
+            <span> $ <input type="text" class="internet" placeholder="internet"></span>
+            <span>🫂<input type="text" class="people" placeholder="numbers of roommate"></span>
+            <h4>Is it time to change a filter?</h4>
+            <button class="filters">Filter</button>
+            <select class="filter">
+                <option disabled>Select an option</option>
+                <option value="28.00">Yes, it needs to be replaced.</option>
+                <option value="0.00" selected>Not today</option>
+            </select>
+            <button class="btn">Calculate</button>
+        </div>
+        <div class="calculated">
+            <div class="total">
+                <p>Rent</p>
+                <span>$</span>
+                <span class="devidedRent"></span>
+                <span>Per person</span>
+            </div>
+            <div class="total">
+                <p>Utility bill</p>
+                <span>$</span>
+                <span class="devidedUtility"></span>
+                <span>Per person</span>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <span>$</span>
+                <span class="devidedTotal"></span>
+                <span>Per person</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

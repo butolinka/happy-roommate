@@ -1,0 +1,94 @@
+body{
+  background-image: url(https://images.unsplash.com/photo-1509628061459-1328d06c2ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA2fHxoYXBweSUyMHJvb218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #C3B091;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 350px;
+    background-color:#C3B091;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.billToSplit{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+.calculated{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.total{
+    background-color: #D3E4CD;
+    padding: 5px;
+    margin-left: 5px;
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    align-self: center;
+    color: #181D31;
+}
+::placeholder{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E2C2B9;
+}
+.btn{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E2C2B9;
+    margin-top: 3px;
+    color: #181D31;
+}
+.filters{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #D3E4CD;
+    margin-bottom: 2px;
+    color: #181D31;
+}
+.filter{
+    display: none;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E2C2B9;
+    color: #181D31;
+}
+input{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E2C2B9;
+    margin-bottom: 5px;
+    color: #181D31;
+}
+span, h3, h4{
+    align-self: center;
+    color: #181D31;
+}
+
+@media all and (max-width:915px){
+body{
+    height: 100vh;
+    background-position: right;
+}
+}
+@media all and (max-width:500px){
+    body{
+        height: 100vh;
+        background-position: right;
+        background-size: cover;
+    }
+    .container{
+        margin: 5px;
+    }
+    }
